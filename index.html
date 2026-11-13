@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №2. JavaScript</title>
+</head>
+<body>
+
+    <h1>Практическая работа №2</h1>
+    <h2>Разработка сценариев Web-страниц на JavaScript</h2>
+
+    <!-- Задание 2: Картинка и кнопка -->
+    <section>
+        <h3>Задание 2. Картинка и кнопка</h3>
+        <!-- Путь к картинке исправлен на images.png -->
+        <img src="images.png" alt="Логотип футбольного клуба Манчестер Сити" width="200">
+        <p id="dynamicText">Здесь появится новый текст после нажатия кнопки.</p>
+        <button id="changeBtn">Нажми меня</button>
+    </section>
+
+    <hr>
+
+    <!-- Задание 3: Данные из Google Таблицы -->
+    <section>
+        <h3>Задание 3. Данные из Google Таблицы (fetch + CSV)</h3>
+        <p id="status">Загрузка данных...</p>
+        <table id="booksTable" border="1" cellpadding="6" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Автор</th>
+                    <th>Год</th>
+                </tr>
+            </thead>
+            <tbody id="booksBody"></tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Остальные пункты из исходной работы -->
+    <section>
+        <h3>Дополнительные примеры</h3>
+
+        <p>Текстовое поле с инициализацией при загрузке:</p>
+        <input type="text" id="hitext" size="30">
+
+        <p>Кнопка «Показать сообщение»:</p>
+        <input type="text" id="Textbox" size="30">
+        <button id="showMsgBtn">Показать сообщение</button>
+
+        <p>Флажки:</p>
+        <label><input type="checkbox" data-name="Флажок 1"> Флажок 1</label><br>
+        <label><input type="checkbox" data-name="Флажок 2"> Флажок 2</label><br>
+        <label><input type="checkbox" data-name="Флажок 3"> Флажок 3</label><br>
+        <input type="text" id="CheckBox" size="30" readonly>
+
+        <p>Радиопереключатели:</p>
+        <label><input type="radio" name="r" value="Переключатель 1"> Переключатель 1</label><br>
+        <label><input type="radio" name="r" value="Переключатель 2"> Переключатель 2</label><br>
+        <label><input type="radio" name="r" value="Переключатель 3"> Переключатель 3</label><br>
+        <input type="text" id="RadioBox" size="30" readonly>
+
+        <p>Выпадающий список:</p>
+        <select id="Select1">
+            <option>Опция 1</option>
+            <option>Опция 2</option>
+            <option>Опция 3</option>
+            <option>Опция 4</option>
+            <option>Опция 5</option>
+        </select>
+        <input type="text" id="SelectBox" size="40" readonly>
+
+        <p>Диалоги:</p>
+        <button id="confirmBtn">Загрузить изображение (confirm)</button>
+        <div id="imgPlace" style="margin-top:10px;"></div>
+
+        <button id="alertBtn">Показать alert</button>
+
+        <button id="promptBtn">Ввести имя</button>
+        <div id="PromptResult" style="margin-top:10px; font-size:18px;"></div>
+    </section>
+
+    <!-- Подключение внешнего JS -->
+    <script src="script.js"></script>
+</body>
+</html>
